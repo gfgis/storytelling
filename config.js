@@ -8,7 +8,6 @@ var config = {
     title: "Barcelona: a case for biodiversity",
     subtitle: "The role of the Besòs river",
     byline: 'By Giulia Ferrari',
-    footer: 'Source: source citations, etc.',
     chapters: [
         {
             id: 'Global',
@@ -94,7 +93,7 @@ var config = {
             hidden: false,
             title: "Besòs river",
             image: 'assets/parquefluvial.jpg',
-            description: "In the case of the Besòs river, it was only in 1995 that a cooperation agreement was signed between the various neighboring municipalities for the environmental recovery of the river. <br><br>Its rehabilitation process consists mainly in the creation of a river park (shown in green on the map) where to introuce floristical species typical of wetlands on the river's edges such as reeds and grass(shown in orange).",
+            description: "In the case of the Besòs river, it was only in 1995 that a cooperation agreement was signed between the various neighboring municipalities for the environmental recovery of the river. <br><br>Its rehabilitation process consists mainly in the creation of a river park (shown in green on the map) which acts both as a civic axis as well as biotope where to introuce floristical species typical of wetlands on the river's edges such as reeds and grass (shown in orange).",
             location: {
                 center: [2.22418, 41.42801],
                 zoom: 13.8,
@@ -115,10 +114,10 @@ var config = {
             alignment: 'right',
             hidden: false,
             title: "Wetlands",
-            image: 'assets/parquefluvial.jpg',
+            image: 'assets/rizoma.PNG',
             description: "Wetlands are also useful in order to reduce soil and water pullution (plant roots act as a drainage system and reduce impurities) caused by this purification plant, located on the right bank of the river.",
             location: {
-                center: [2.191, 41.472,],
+                center: [2.191, 41.472],
                 zoom: 15.8,
                 pitch: 34.2,
                 bearing: 64
@@ -131,7 +130,28 @@ var config = {
                 opacity: 0.9
             }],
             onChapterExit: []
+        },
+        {
+            id: 'Besos_last',
+            alignment: 'right',
+            hidden: false,
+            title: "Wetlands in the estuary",
+            image: 'assets/Charadriusdubius.jpg',
+            description: "This part of the river, which had a great recovery of its wetlands, is exclusively dedicated to fauna and flora, that is, the function of civic axis which extends throughout the rest of the river's route, ceases to exist to make room for the restoration of certain species that need an isolated space (for nesting, for example in the case of birds such as Charadrius dubius represented in the picture) from human intervention.",
+            location: {
+                center: [2.231, 41.421],
+                zoom: 16.5,
+                pitch: 58,
+                bearing: -54
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: false,
+            callback: '',
+            onChapterEnter: [{
+                layer: 'flora-besos-7ss2rl',
+                opacity: 0.9
+            }],
+            onChapterExit: []
         }
-
     ]
 };
